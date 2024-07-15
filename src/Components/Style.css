@@ -1,0 +1,149 @@
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f7f7f7; 
+}
+h2{
+  text-transform: capitalize;
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+.chat-app {
+  max-width: 400px;
+  margin: 40px auto;
+  padding-top: 20px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.chat-window {
+  padding: 20px;
+  /* overflow-y: auto;  */
+  /* height: 300px; */
+  
+}
+
+.chat-window > div {
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  width: 100%;
+}
+
+.you {
+  background-color: #f2f2f2; 
+  margin-left: 20px;
+  padding: 10px;
+  align-self: flex-end; 
+  margin-bottom: 30px;
+  /* border: 1px solid black; */
+  margin-right: 40px;
+  text-align:right ;
+  text-transform: capitalize;
+}
+
+.gemini {
+  background-color: #e5e5e5; 
+  margin-right: 20px;
+  align-self: flex-start; 
+  padding: 10px;
+}
+
+.input-box {
+  padding: 20px;
+  border-top: 1px solid #ddd;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.input-box input[type="text"] {
+  width: 80%;
+  padding: 10px;
+  border: 2px solid black;
+  border-radius: 10px;
+  font-size: 16px;
+  margin-right: 20px;
+}
+
+.input-box button[type="submit"] {
+  background-color: #4CAF50;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.input-box button[type="submit"]:hover {
+  background-color: #3e8e41;
+}
+
+
+.chat-window > div {
+  transition: all 0.3s ease-in-out;
+}
+
+/* .chat-window > div:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+} */
+
+.input-box input[type="text"]:focus {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  border-color: #4CAF50;
+}
+
+
+@media (max-width: 768px) {
+  .chat-app {
+    
+    max-width: 350px;
+    margin: 20px auto;
+    margin-top: 50px;
+  }
+  
+  .input-box input[type="text"] {
+    width: 70%;
+  }
+}
+
+@media (max-width: 480px) {
+  .chat-app {
+   
+    max-width: 350px;
+    margin: 10px auto;
+    margin-top: 50px;
+  }
+  
+  .input-box input[type="text"] {
+    width: 60%;
+  }
+}
+
+
+@media (max-width: 320px) {
+  .chat-app {
+    max-width: 200px;
+    margin: 5px auto;
+  }
+  .chat-window {
+    height: 150px;
+  }
+  .input-box input[type="text"] {
+    width: 50%;
+  }
+}
