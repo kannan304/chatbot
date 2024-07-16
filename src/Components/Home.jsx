@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { GoogleGenerativeAI } from '@google/generative-ai';
 import "./Style.css"
-const API_KEY = 'AIzaSyAbVmPDJAsPOU6jLBniDOltMuun8UsySA4';
 
 function Home() {
   const [messages, setMessages] = useState([]);
